@@ -40,4 +40,10 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+const container = document.getElementById("root")!;
+const ROOT_KEY = "__REACT_APP_ROOT__";
+const g = window as any;
+if (!g[ROOT_KEY]) {
+  g[ROOT_KEY] = createRoot(container);
+}
+g[ROOT_KEY].render(<App />);
