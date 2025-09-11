@@ -71,7 +71,7 @@ export default function About() {
       </section>
 
       <section className="container mx-auto py-12">
-        <div className="rounded-3xl bg-purple-900 p-6 text-white md:p-10">
+        <div className="rounded-3xl p-6 text-white md:p-10" style={{ backgroundColor: 'rgba(20, 184, 166, 0.23)' }}>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               ["EMERGENCY CALL", "331-870-6671"],
@@ -80,7 +80,8 @@ export default function About() {
             ].map(([label, phone]) => (
               <div
                 key={label}
-                className="flex items-center justify-between rounded-2xl bg-purple-800/70 px-6 py-4"
+                className="flex items-center justify-between rounded-2xl px-6 py-4"
+                style={{ backgroundColor: 'rgba(20, 184, 166, 1)' }}
               >
                 <div className="font-medium">{label}</div>
                 <div className="text-lg font-semibold">{phone}</div>
