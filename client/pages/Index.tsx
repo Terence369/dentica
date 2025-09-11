@@ -58,7 +58,7 @@ export default function Index() {
           <div className="order-1 md:order-2 relative">
             <div className="relative mx-auto aspect-[4/5] max-w-md rounded-[2.5rem] bg-sky-100">
               <img
-                src="https://images.unsplash.com/photo-1598257003969-88b563f3e8f7?q=80&w=1080&auto=format&fit=crop"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F7eb0d38b9b744bef98b5ccd4f565460c"
                 alt="Happy patient"
                 className="h-full w-full rounded-[2.5rem] object-cover"
               />
