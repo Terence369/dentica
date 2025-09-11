@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Button } from "@/components/ui/button";
 import { Clock, Search, CreditCard, Calendar, Heart, Stethoscope } from "lucide-react";
 
 export default function About() {
