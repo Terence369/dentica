@@ -1,6 +1,28 @@
 import { Button } from "@/components/ui/button";
 
+import { Button } from "@/components/ui/button";
+import { Clock, Search, CreditCard, Calendar, Heart, Stethoscope } from "lucide-react";
+
 export default function About() {
+  const getIcon = (title: string) => {
+    switch (title) {
+      case "24 Hours Ready":
+        return <Clock className="h-5 w-5 text-black" />;
+      case "Accurate Diagnostics":
+        return <Search className="h-5 w-5 text-black" />;
+      case "Pay in Installment":
+        return <CreditCard className="h-5 w-5 text-black" />;
+      case "Online Booking":
+        return <Calendar className="h-5 w-5 text-black" />;
+      case "Work from Heart":
+        return <Heart className="h-5 w-5 text-black" />;
+      case "Regular Checkup":
+        return <Stethoscope className="h-5 w-5 text-black" />;
+      default:
+        return <Clock className="h-5 w-5 text-black" />;
+    }
+  };
+
   return (
     <div>
       <section className="border-b bg-gradient-to-b from-sky-50 to-white">
@@ -49,7 +71,9 @@ export default function About() {
                 key={t as string}
                 className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5"
               >
-                <div className="h-10 w-10 rounded-xl bg-sky-100" />
+                <div className="h-10 w-10 rounded-xl bg-sky-100 flex items-center justify-center">
+                  {getIcon(t as string)}
+                </div>
                 <h3 className="mt-3 font-semibold">{t as string}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
                   {d as string}
