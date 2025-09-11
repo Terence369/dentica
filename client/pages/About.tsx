@@ -91,13 +91,19 @@ export default function About() {
         </div>
       </section>
 
-      <section className="container mx-auto grid gap-10 py-12 md:grid-cols-2 md:items-center">
+      <section className="container mx-auto grid gap-10 py-12 md:grid-cols-2 md:items-center" style={{ backgroundColor: 'rgba(20, 184, 166, 0.06)' }}>
         <div className="md:order-2">
           <div className="mx-auto aspect-[3/4] max-w-xs overflow-hidden rounded-[2rem]">
             <img
-              src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?q=80&w=1200&auto=format&fit=crop"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Fa4c0e3e18690497b889706eba9c47b07"
               alt="Happy client"
               className="h-full w-full object-cover"
+              style={{
+                backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Fa4c0e3e18690497b889706eba9c47b07)',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+              }}
             />
           </div>
         </div>
