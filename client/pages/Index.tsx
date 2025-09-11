@@ -70,7 +70,7 @@ export default function Index() {
       </section>
 
       {/* Why choose us */}
-      <section className="container mx-auto py-16">
+      <section className="container mx-auto py-16" style={{ backgroundColor: 'rgba(235, 245, 242, 0.52)' }}>
         <h2 className="text-center text-3xl font-bold md:text-4xl">
           Why You Should Choose Our Dental Service?
         </h2>
@@ -125,27 +125,27 @@ export default function Index() {
           {[
             [
               "Teeth Checkup",
-              "https://images.unsplash.com/photo-1588771930297-620c366b6c16?q=80&w=1080&auto=format&fit=crop",
+              "https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F6100a091acbe4210989f04123b3b3958",
             ],
             [
               "Teeth Whitening",
-              "https://images.unsplash.com/photo-1622206151225-20cc4b00a0ff?q=80&w=1080&auto=format&fit=crop",
+              "https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F44c34518470f404ab762203a7a21d144",
             ],
             [
               "Dental Braces",
-              "https://images.unsplash.com/photo-1588773846626-2f9b6fac1b0d?q=80&w=1080&auto=format&fit=crop",
+              "https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F825096872a4f4de99ea9bcf00ba888e6",
             ],
             [
               "Teeth Implants",
-              "https://images.unsplash.com/photo-1588776814546-1ffcf47267a8?q=80&w=1080&auto=format&fit=crop",
+              "https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F47fd9528288d48058bcb6d627668b848",
             ],
             [
               "Dental Filling",
-              "https://images.unsplash.com/photo-1588774069260-9b0b2e6a2f1a?q=80&w=1080&auto=format&fit=crop",
+              "https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F7fd0848718264e05af1f54a4f893b587",
             ],
             [
               "Cosmetic",
-              "https://images.unsplash.com/photo-1581594693700-8900b9f4247f?q=80&w=1080&auto=format&fit=crop",
+              "https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F32cccde8156349cca3893c3090f1ab4f",
             ],
           ].map(([title, src]) => (
             <div
@@ -213,7 +213,7 @@ export default function Index() {
         <div className="relative">
           <div className="mx-auto max-w-md overflow-hidden rounded-[2rem] bg-muted/50">
             <img
-              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&w=1080&auto=format&fit=crop"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Fbde0249ed5c1447b9a257ecf3ba577d7"
               alt="Ask doctor online"
               className="h-full w-full object-cover"
             />
@@ -228,7 +228,7 @@ export default function Index() {
           <div className="md:col-span-1">
             <div className="mx-auto aspect-[3/4] max-w-xs overflow-hidden rounded-[2rem]">
               <img
-                src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?q=80&w=1200&auto=format&fit=crop"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F9c07635955f14d11b48b6db10a448b42"
                 alt="Happy client"
                 className="h-full w-full object-cover"
               />
@@ -281,7 +281,7 @@ export default function Index() {
       </section>
 
       {/* CTA band */}
-      <section className="bg-purple-900 py-8">
+      <section style={{ backgroundColor: 'rgba(153, 246, 228, 0.5)' }} className="py-8">
         <div className="container mx-auto grid gap-4 text-white md:grid-cols-3">
           {[
             ["EMERGENCY CALL", "331-870-6671"],
@@ -290,7 +290,7 @@ export default function Index() {
           ].map(([label, phone]) => (
             <div
               key={label}
-              className="flex items-center justify-between rounded-2xl bg-purple-800/70 px-6 py-4"
+              className="flex items-center justify-between rounded-2xl px-6 py-4" style={{ backgroundColor: 'rgba(20, 184, 166, 1)' }}
             >
               <div className="font-medium">{label}</div>
               <div className="text-lg font-semibold">{phone}</div>
