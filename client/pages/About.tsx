@@ -61,7 +61,7 @@ export default function About() {
         <div className="relative">
           <div className="mx-auto max-w-md overflow-hidden rounded-[2rem] bg-muted/50">
             <img
-              src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?q=80&w=1080&auto=format&fit=crop"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Ff2379660ff2841c6ad58fd53be33e73b"
               alt="Our team"
               className="h-full w-full object-cover"
             />
