@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Clock, Search, CreditCard, Calendar, Heart, Stethoscope } from "lucide-react";
+import {
+  Clock,
+  Search,
+  CreditCard,
+  Calendar,
+  Heart,
+  Stethoscope,
+} from "lucide-react";
 
 export default function About() {
   const getIcon = (title: string) => {
@@ -93,7 +100,10 @@ export default function About() {
       </section>
 
       <section className="container mx-auto py-12">
-        <div className="rounded-3xl p-6 text-white md:p-10" style={{ backgroundColor: 'rgba(20, 184, 166, 0.23)' }}>
+        <div
+          className="rounded-3xl p-6 text-white md:p-10"
+          style={{ backgroundColor: "rgba(20, 184, 166, 0.23)" }}
+        >
           <div className="grid gap-6 md:grid-cols-3">
             {[
               ["EMERGENCY CALL", "331-870-6671"],
@@ -103,7 +113,7 @@ export default function About() {
               <div
                 key={label}
                 className="flex items-center justify-between rounded-2xl px-6 py-4"
-                style={{ backgroundColor: 'rgba(20, 184, 166, 1)' }}
+                style={{ backgroundColor: "rgba(20, 184, 166, 1)" }}
               >
                 <div className="font-medium">{label}</div>
                 <div className="text-lg font-semibold">{phone}</div>
@@ -113,7 +123,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="container mx-auto grid gap-10 py-12 md:grid-cols-2 md:items-center" style={{ backgroundColor: 'rgba(20, 184, 166, 0.06)' }}>
+      <section
+        className="container mx-auto grid gap-10 py-12 md:grid-cols-2 md:items-center"
+        style={{ backgroundColor: "rgba(20, 184, 166, 0.06)" }}
+      >
         <div className="md:order-2">
           <div className="mx-auto aspect-[3/4] max-w-xs overflow-hidden rounded-[2rem]">
             <img
@@ -121,10 +134,11 @@ export default function About() {
               alt="Happy client"
               className="h-full w-full object-cover"
               style={{
-                backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Fa4c0e3e18690497b889706eba9c47b07)',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
+                backgroundImage:
+                  "url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Fa4c0e3e18690497b889706eba9c47b07)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
               }}
             />
           </div>

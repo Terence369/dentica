@@ -70,7 +70,10 @@ export default function Index() {
       </section>
 
       {/* Why choose us */}
-      <section className="container mx-auto py-16" style={{ backgroundColor: 'rgba(235, 245, 242, 0.52)' }}>
+      <section
+        className="container mx-auto py-16"
+        style={{ backgroundColor: "rgba(235, 245, 242, 0.52)" }}
+      >
         <h2 className="text-center text-3xl font-bold md:text-4xl">
           Why You Should Choose Our Dental Service?
         </h2>
@@ -281,7 +284,10 @@ export default function Index() {
       </section>
 
       {/* CTA band */}
-      <section style={{ backgroundColor: 'rgba(153, 246, 228, 0.5)' }} className="py-8">
+      <section
+        style={{ backgroundColor: "rgba(153, 246, 228, 0.5)" }}
+        className="py-8"
+      >
         <div className="container mx-auto grid gap-4 text-white md:grid-cols-3">
           {[
             ["EMERGENCY CALL", "331-870-6671"],
@@ -290,7 +296,8 @@ export default function Index() {
           ].map(([label, phone]) => (
             <div
               key={label}
-              className="flex items-center justify-between rounded-2xl px-6 py-4" style={{ backgroundColor: 'rgba(20, 184, 166, 1)' }}
+              className="flex items-center justify-between rounded-2xl px-6 py-4"
+              style={{ backgroundColor: "rgba(20, 184, 166, 1)" }}
             >
               <div className="font-medium">{label}</div>
               <div className="text-lg font-semibold">{phone}</div>
