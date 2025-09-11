@@ -35,12 +35,16 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="container mx-auto grid gap-10 py-12 md:grid-cols-2" style={{
-        backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F47fd9528288d48058bcb6d627668b848)',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-      }}>
+      <section
+        className="container mx-auto grid gap-10 py-12 md:grid-cols-2"
+        style={{
+          backgroundImage:
+            "url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F47fd9528288d48058bcb6d627668b848)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
         <div>
           <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-black/5">
             <h2 className="text-xl font-semibold">Common Questions</h2>
@@ -54,11 +58,17 @@ export default function FAQ() {
             </Accordion>
           </div>
         </div>
-        <div className="rounded-3xl p-6 text-white" style={{ backgroundColor: 'rgba(20, 184, 166, 0.36)' }}>
-          <h3 className="text-lg font-semibold" style={{ color: 'rgba(0,0,0,1)'}}>
+        <div
+          className="rounded-3xl p-6 text-white"
+          style={{ backgroundColor: "rgba(20, 184, 166, 0.36)" }}
+        >
+          <h3
+            className="text-lg font-semibold"
+            style={{ color: "rgba(0,0,0,1)" }}
+          >
             Get online access to ask the doctor 24/7.
           </h3>
-          <p className="mt-2" style={{ color: 'rgba(0,0,0,1)'}}>
+          <p className="mt-2" style={{ color: "rgba(0,0,0,1)" }}>
             Have a health concern? Chat with a doctor and get the answers you
             need, anywhere.
           </p>
@@ -72,7 +82,7 @@ export default function FAQ() {
               <div
                 key={label}
                 className="flex items-center justify-between rounded-2xl px-6 py-4"
-                style={{ backgroundColor: 'rgba(20, 184, 166, 1)'}}
+                style={{ backgroundColor: "rgba(20, 184, 166, 1)" }}
               >
                 <div className="font-medium">{label}</div>
                 <div className="text-lg font-semibold">{phone}</div>
