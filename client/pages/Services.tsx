@@ -36,11 +36,14 @@ export default function Services() {
   return (
     <div>
       <section className="border-b bg-gradient-to-b from-sky-50 to-white">
-        <div className="container mx-auto py-12">
+        <div className="container mx-auto py-12" style={{
+          backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F7fd0848718264e05af1f54a4f893b587)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}>
           <h1 className="text-4xl font-bold">Our Service</h1>
-          <p className="mt-2 text-muted-foreground">
-            Keep Your Smile Clean & Shine
-          </p>
+          <p className="mt-2 text-muted-foreground"><span style={{ color: 'rgb(0,0,0)' }}>Keep Your Smile Clean &amp; Shine</span></p>
         </div>
       </section>
 
@@ -56,6 +59,12 @@ export default function Services() {
                   src={src as string}
                   alt={title as string}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  style={{
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2Faaf60de777874a48be81d292fcd529ca)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                  }}
                 />
               </div>
               <div className="p-5">
@@ -73,7 +82,7 @@ export default function Services() {
         <div className="md:order-2">
           <div className="mx-auto aspect-[3/4] max-w-xs overflow-hidden rounded-[2rem]">
             <img
-              src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?q=80&w=1200&auto=format&fit=crop"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2bdfb75c4a42464ea64f680845f3e793%2F7eb0d38b9b744bef98b5ccd4f565460c"
               alt="Happy client"
               className="h-full w-full object-cover"
             />
@@ -90,7 +99,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="bg-purple-900 py-8">
+      <section style={{ backgroundColor: 'rgba(20, 184, 166, 0.35)' }} className="py-8">
         <div className="container mx-auto grid gap-4 text-white md:grid-cols-3">
           {[
             ["EMERGENCY CALL", "331-870-6671"],
@@ -99,7 +108,8 @@ export default function Services() {
           ].map(([label, phone]) => (
             <div
               key={label}
-              className="flex items-center justify-between rounded-2xl bg-purple-800/70 px-6 py-4"
+              className="flex items-center justify-between rounded-2xl px-6 py-4"
+              style={{ backgroundColor: 'rgba(20, 184, 166, 1)' }}
             >
               <div className="font-medium">{label}</div>
               <div className="text-lg font-semibold">{phone}</div>
